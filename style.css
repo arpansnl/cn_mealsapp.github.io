@@ -1,0 +1,370 @@
+body{
+    overflow: hidden;
+    display: flex;
+}
+#container{
+    height:100vh;
+    width: 100vw;
+}
+#nav-menu{
+    height:10vh;
+    max-width: 100vw;
+    background:linear-gradient(red,black);
+    display: flex;
+    justify-content: space-around;
+}
+#logo{
+    height:100%;
+    width:10%;
+    border-radius: 5%;
+   
+}
+#logo:hover{
+    animation: changeShape 1s ease-in-out;
+}
+#text{
+    margin:10px;
+    color: azure;
+    font-family:'Courier New', Courier, monospace;
+}
+#home{
+    padding: 0;
+    border: none;
+    background-color:transparent;
+}
+#home img{
+    border:none;
+    background-color: transparent;
+    height:100%;
+    width: 100%;
+}
+#home img:hover{
+    animation: changeShape 1s ease-in-out;
+}
+@keyframes changeShape{
+    from{
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
+    to{
+        transform: scale3d(1, 1, 1);
+    }
+}
+#favourite_btn{
+    border:none;
+    font-size:16px;
+    font-weight: bold;
+    color: azure;
+    background-color:transparent;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+#favourite_btn:hover{
+    border: 2px solid black;
+}
+
+#content{
+    height: 91vh;
+    width:100vw;
+    background: url(bg_img.jpg);
+    background-size: 100vw 91vh;
+    background-repeat: no-repeat;
+}
+#header{
+    height:30vh;
+    width:65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+#mainH1{
+    margin: 0px;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-shadow:5px 5px 8px #bbbdc2;
+}
+#search_box {
+    height: 25%;
+    width: 60%;
+    background-color: red;
+    border: 4px solid white;
+   border-radius: 10%;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#resulth3 {
+    margin: 0px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.food_card{
+    background-color:black; 
+    box-shadow: 5px 5px 5px rgb(141, 138, 138);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:10vh;
+    width:44vw;
+    border-radius: 10%;
+    margin-left: 10px;
+    margin-top: 1%;
+}
+.food_card2{
+    background-color:black; 
+    box-shadow: 5px 5px 5px rgb(141, 138, 138);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:10vh;
+    width:24vw;
+    border-radius: 10%;
+    margin-left: 10px;
+    margin-top: 1%;
+}
+.card_img_div{
+    margin-top:2px;
+    height:30%;
+    width:90%;
+    display: flex;
+}
+.card_img{
+    margin-top: 2px;
+    margin-left: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgb(188, 203, 216);
+}
+.card_text_para{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    font-weight: bold;
+    color: red;
+}
+.card_side_div{
+    height:12%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    height:50px ;
+    width:25%;
+    border-radius: 10%;
+    border: 2px solid  red
+}
+.btn:hover{
+   background-color: red;
+   color:white
+    
+}
+#notfound{
+    color: white;
+}
+.material-symbols-sharp{
+    height:25px;
+    width: 30px;
+    border: none;
+    background-color: transparent;
+}
+.material-symbols-sharp i{
+    color: white;
+}
+.Recipe_card {
+    height: 80vh;
+    width: 60vw;
+    background-color: black;
+    position: absolute;
+    top: 15vh;
+    left: 2.5vw;
+    border-radius: 35px;
+    display: flex;
+    box-shadow: 10px 10px 100px whitesmoke;
+}
+.Recipe_div {
+    height: 80vh;
+    width: 60vw;
+    background-color: red;
+    position: absolute;
+    top: 15vh;
+    left: 2.5vw;
+    border-radius: 35px;
+    display: flex;
+    box-shadow: 10px 10px 100px whitesmoke;
+}
+
+#left {
+    height: 100%;
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 10vh;
+}
+
+#left_upper {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#left_upper p{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+    
+}
+
+#left_upper_img {
+    margin-top: 30px;
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+}
+
+
+#left_lower {
+    margin-top: 10px;
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#left_lower_btn {
+    margin-top: 30px;
+    height: 45%;
+    width: 100%;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color:red;
+    border-radius: 12px;
+    border: 3px solid black;
+}
+
+#left_lower_btn:hover {
+    color: white;
+    background-color:red; 
+    border: 2px solid white;
+}
+
+#right {
+    height: 85%;
+    width: 60%;
+    margin-right: 40px;
+    margin-top: 10vh;
+    margin-left: 40px;
+    overflow-y: scroll;
+}
+
+#right_inst {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1.7rem;
+    margin: 0px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#right_p {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: white;
+    text-align: justify;
+    margin-top: 23px;
+}
+
+.cross {
+    position: absolute;
+    top: 3vh;
+    right: 1.5vw;
+    font-size: 1.8rem; 
+    color: red;
+}
+
+
+
+
+#favourites_container {
+    height: 100vh;
+    width: 360px;
+    right: -360px;
+    position: fixed;
+    transition: right 0.3s linear;
+}
+#fav_head {
+    height: 10vh;
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+}
+
+#fav_head h1 {
+    font-family:'Courier New', Courier, monospace;
+    margin: 0px;
+    padding-left: 1vw;
+}
+
+#EXIT {
+    position: absolute;
+    top: 3vh;
+    right: 1vw;
+    font-size: 1.8rem;
+}
+
+#fav_body {
+    box-sizing: border-box;
+    padding-top: 10px;
+    height: 90vh;
+    width: 360px;
+    background-image: linear-gradient(red,black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
+}
+
+#fav_body h2 {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 40vh;
+}
+
+.card_lower_div_fav {
+    height: 10%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.btn1 {
+    margin-top: 40px;
+    color: red;
+    background-color: transparent;
+    border: none;
+}
+
+.btn1:hover {
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+}
